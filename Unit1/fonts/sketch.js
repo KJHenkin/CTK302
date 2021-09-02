@@ -15,6 +15,6 @@ textSize(48) ;
 text("hello world", 100, 100) ;
 
 textFont(f2) ;
-textsize(24) ;
+textSize(24) ;
 text("Go You Redbirds!", width/2, 160) ;
 }
