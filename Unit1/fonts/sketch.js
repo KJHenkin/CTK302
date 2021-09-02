@@ -4,7 +4,7 @@ let f1, f2 ;
 function setup() {
   createCanvas(500, 500);
   f1 = loadFont("assets/Balbaleo.ttf") ;
-  f2 = loadfont("assets/photograph.ttf") ;
+  f2 = loadFont("assets/photograph.ttf") ;
   textAlign(CENTER) ;
 }
 
