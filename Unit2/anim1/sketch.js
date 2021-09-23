@@ -6,7 +6,8 @@ function setup() {
 
 function draw() {
   background('grey') ;
-rect(x, 100, 100, 100) ;
+//rect(x, 100, 100, 100) ;
+text('Hello') ; 
 x = x + 3 ;
 if (x > width) {
   x = 0 ;
