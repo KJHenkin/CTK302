@@ -2,6 +2,9 @@ let numberOfTouches ;
 let leaves;
 let painting ;
 let painting1 ;
+let leaf pattern ;
+let windowpic ;
+let highfive ;
 
 function setup() {
   createCanvas(800, 800);
@@ -9,6 +12,9 @@ function setup() {
   leaves = loadImage("assets/Leaves.jpg") ;
   painting = loadImage("assets/painting.jpg") ;
   painting1 = loadImage("assets/painting(1).jpg") ;
+  leaf pattern = loadImage("assets/leafpattern.jpg") ;
+  windowpic = loadImage("assets/window.jpg") ;
+  highfive = loadImage("assets/virtual-high-five.jpg") ;
 }
 
 function draw() {
@@ -20,7 +26,7 @@ function draw() {
     case 0:
     background('grey') ;
     image(leaves,  100, 200, 600, 400) ;
-      text("no fingers on the screen, here's a pretty picture", 5, 22) ;
+      text("No fingers on the screen, here's a pretty picture", 5, 22) ;
       textSize(20) ;
 
       break ;
@@ -28,31 +34,33 @@ function draw() {
       case 1:
      background('lightgreen') ;
      image(painting1,  100, 200, 600, 600) ;
-       text("it's kind of lonely here", 5, 22) ;
+       text("It's kind of lonely here", 5, 22) ;
       // put a picture here
       break ;
 
       case 2:
      background('lavender') ;
-     image(painting,  100, 200, 600, 600) ;
-      text("just two fingers?", 5, 22) ;
+     image(painting,  100, 200, 600, 400) ;
+      text("Just two fingers?", 5, 22) ;
             // put a picture here
       break ;
 
       case 3:
     background('#9799BA') ;
-     text("c'mon, you can do better than three", 5, 22) ;
-            // put a picture here
+    image(leaf pattern, 100, 200, 600, 400) ;
+     text("C'mon, you can do better than three", 5, 22) ;
       break ;
 
       case 4:
     background('#F8B195') ;
-      text("four makes a crowd", 5, 22) ;
+    image(windowpic, 100, 200, 600, 400) ;
+      text("Four makes a crowd", 5, 22) ;
       break ;
 
       case 5:
     background('#8BD6D6') ;
-      text("five? high five!", 5, 22) ;
+    image(highfive, 100, 200, 600, 400) ;
+      text("Five? High five!", 5, 22) ;
 
 
   }

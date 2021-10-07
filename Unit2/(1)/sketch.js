@@ -56,8 +56,8 @@ function draw() {
 
   }
 
-  fill('white');
-  text(mouseX + ", " + mouseY, 15, 15);
+  //fill('white');
+  //text(mouseX + ", " + mouseY, 15, 15);
 }
 
 function mouseReleased() {
