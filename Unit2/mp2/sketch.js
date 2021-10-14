@@ -2,7 +2,7 @@ let numberOfTouches;
 let leaves;
 let painting;
 let painting1;
-let leaf pattern;
+let leafpattern;
 let windowpic;
 let highfive;
 
@@ -11,16 +11,16 @@ function setup() {
 
   leaves = loadImage("assets/Leaves.jpg");
   painting = loadImage("assets/painting.jpg");
-  painting1 = loadImage("assets/painting(1).jpg");
-  leaf pattern = loadImage("assets/leafpattern.jpg");
-  windowpic = loadImage("assets/window.jpg");
-  highfive = loadImage("assets/virtual-high-five.jpg");
+  painting1 = loadImage("assets/painting1.jpg");
+  leafpattern = loadImage("assets/leafpattern.jpg");
+  windowpic = loadImage("assets/windowpic.jpg");
+  highfive = loadImage("assets/highfive.jpg");
 }
 
 function draw() {
   clear();
   numberOfTouches = touches.length;
-  text(numberOfTouches + ' touches', 5, 10);
+  text(numberOfTouches + 'touches', 5, 10);
 
   switch (numberOfTouches) {
     case 0:
@@ -47,7 +47,7 @@ function draw() {
 
     case 3:
       background('#9799BA');
-      image(leaf pattern, 100, 200, 600, 400);
+      image(leafpattern, 100, 200, 600, 400);
       text("C'mon, you can do better than three", 5, 22);
       break;
 
