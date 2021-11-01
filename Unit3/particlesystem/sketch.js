@@ -5,6 +5,9 @@ function setup() {
   createCanvas(500, 500);
   noStroke();
 
+
+paint = loadImage('assets/paint.jpg') ;
+
   // for (let i = 0; i < 20; i++) {
   //   cars.push(new Car());
   // }
@@ -13,7 +16,7 @@ function setup() {
 function draw() {
   background("#008080");
 
-  image(paint, 100, 100) ; 
+  image(paint, 100, 100) ;
 
   cars.push(new Car()); //spawn car
 
