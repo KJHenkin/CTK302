@@ -2,7 +2,7 @@ let cars = [];
 let paint ;
 
 function setup() {
-  createCanvas(800, 800);
+  createCanvas(1000, 1000);
   noStroke();
 
 
