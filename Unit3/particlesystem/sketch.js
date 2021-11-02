@@ -14,8 +14,9 @@ paint = loadImage('assets/paint.jpg') ;
 }
 
 function draw() {
-  background(paint);
+  background("#008080");
 
+  image(paint, 100, 200) ;
 
   cars.push(new Car()); //spawn car
 
