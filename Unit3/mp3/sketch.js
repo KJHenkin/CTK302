@@ -54,8 +54,8 @@ function draw() {
 
     case 3: //lose state
       textSize(28);
-      fill("white");
-      background("lightred");
+      fill("black");
+      background("#FF7F7F");
       text("YOU RAN OUT OF FILM. YOU FAILED TO FINISH THE SHOOT", 400, 400);
       break;
   }
@@ -96,7 +96,7 @@ function game() {
 
   // frog
   fill("green");
-  image(camera, frogPos.x, frogPos.y, 100, 100);
+  image(camera, frogPos.x, frogPos.y, 150, 150);
   checkForKeys();
 }
 
