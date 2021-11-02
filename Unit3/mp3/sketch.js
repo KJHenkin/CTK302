@@ -8,10 +8,15 @@ let film ;
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
-  imageMode(CENTER) ;
+
 
 camera = loadImage("assets/camera.svg") ;
 film = loadImage("assets/film.svg") ;
+
+imageMode(CENTER) ;
+textAlign(CENTER) ;
+rectMode(CENTER) ;
+ellipseMode(CENTER) ;
 
   // Spawn many objects
 
@@ -20,10 +25,7 @@ film = loadImage("assets/film.svg") ;
   }
 
   frogPos = createVector(width / 2, height - 80);
-  imageMode(CENTER) ;
-  textAlign(CENTER) ;
-  rectMode(CENTER) ;
-  ellipseMode(CENTER) ;
+
 
 }
 
