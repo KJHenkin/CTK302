@@ -1,6 +1,6 @@
 let cars = [];
 let frogPos;
-let maxCar = 50;
+let maxCar = 30;
 let timer = 0;
 let state = 0;
 let camera ;
@@ -58,7 +58,7 @@ function draw() {
       textSize(28);
       fill("black");
       background("#FF7F7F");
-      text("YOU RAN OUT OF FILM. YOU FAILED TO FINISH THE SHOOT", 400, 600);
+      text("YOU RAN OUT OF FILM. YOU FAILED TO FINISH THE SHOOT", 400, 800);
       break;
   }
 }
