@@ -8,6 +8,8 @@ function setup() {
 
 paint = loadImage('assets/paint.jpg') ;
 
+imadeMode(CENTER) ; 
+
   // for (let i = 0; i < 20; i++) {
   //   cars.push(new Car());
   // }
