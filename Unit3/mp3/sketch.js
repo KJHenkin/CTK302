@@ -1,6 +1,6 @@
 let cars = [];
 let frogPos;
-let maxCar = 100;
+let maxCar = 50;
 let timer = 0;
 let state = 0;
 let camera ;
@@ -35,7 +35,7 @@ function draw() {
       background("beige");
       textSize(28);
       fill("black");
-      text("Welcome - Collect the film to finish the photoshoot", 400, 400);
+      text("Welcome - Collect the film to finish the photoshoot", 400, 600);
       break;
 
     case 1: //game state
@@ -51,14 +51,14 @@ function draw() {
       background("lightgreen");
       textSize(28);
       fill("black");
-      text("YOU DID IT! YOU COMPLETED THE SHOOT!", 400, 400);
+      text("YOU DID IT! YOU COMPLETED THE SHOOT!", 400, 600);
       break;
 
     case 3: //lose state
       textSize(28);
       fill("black");
       background("#FF7F7F");
-      text("YOU RAN OUT OF FILM. YOU FAILED TO FINISH THE SHOOT", 400, 400);
+      text("YOU RAN OUT OF FILM. YOU FAILED TO FINISH THE SHOOT", 400, 600);
       break;
   }
 }
