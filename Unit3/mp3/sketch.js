@@ -1,22 +1,22 @@
 let cars = [];
 let frogPos;
-let maxCar = 20;
+let maxCar = 10;
 let timer = 0;
 let state = 0;
-let camera ;
-let film ;
+let camera;
+let film;
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
 
 
-camera = loadImage("assets/camera.svg") ;
-film = loadImage("assets/film.svg") ;
+  camera = loadImage("assets/camera.svg");
+  film = loadImage("assets/film.svg");
 
-imageMode(CENTER) ;
-textAlign(CENTER) ;
-rectMode(CENTER) ;
-ellipseMode(CENTER) ;
+  imageMode(CENTER);
+  textAlign(CENTER);
+  rectMode(CENTER);
+  ellipseMode(CENTER);
 
   // Spawn many objects
 
@@ -41,7 +41,7 @@ function draw() {
     case 1: //game state
       game();
       timer++;
-      if (timer >  10* 60) {
+      if (timer > 10 * 60) {
         timer = 0;
         state = 3;
       }
