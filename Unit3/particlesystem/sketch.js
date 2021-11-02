@@ -16,9 +16,8 @@ imadeMode(CENTER) ;
 }
 
 function draw() {
-  background("#008080");
+  background(paint);
 
-  image(paint, windowWidth, windowHeight) ;
 
   cars.push(new Car()); //spawn car
 
