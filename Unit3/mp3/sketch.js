@@ -1,6 +1,6 @@
 let cars = [];
 let frogPos;
-let maxCar = 1;
+let maxCar = 100;
 let timer = 0;
 let state = 0;
 let camera ;
@@ -23,7 +23,7 @@ film = loadImage("assets/film.svg") ;
   imageMode(CENTER) ;
   textAlign(CENTER) ;
   rectMode(CENTER) ;
-  ellipseMode(CENTER) ; 
+  ellipseMode(CENTER) ;
 
 }
 
@@ -33,7 +33,7 @@ function draw() {
       background("beige");
       textSize(28);
       fill("black");
-      text("Welcome - Collect the film to finish the photoshoot", 100, 200);
+      text("Welcome - Collect the film to finish the photoshoot");
       break;
 
     case 1: //game state
@@ -49,14 +49,14 @@ function draw() {
       background("lightgreen");
       textSize(28);
       fill("black");
-      text("YOU DID IT! YOU COMPLETED THE SHOOT!", 100, 100);
+      text("YOU DID IT! YOU COMPLETED THE SHOOT!");
       break;
 
     case 3: //lose state
       textSize(28);
       fill("white");
       background("lightred");
-      text("YOU RAN OUT OF FILM. YOU FAILED TO FINISH THE SHOOT", 100, 100);
+      text("YOU RAN OUT OF FILM. YOU FAILED TO FINISH THE SHOOT");
       break;
   }
 }
@@ -96,7 +96,7 @@ function game() {
 
   // frog
   fill("green");
-  image(camera, frogPos.x, frogPos.y, 50, 50);
+  image(camera, frogPos.x, frogPos.y, 100, 100);
   checkForKeys();
 }
 
