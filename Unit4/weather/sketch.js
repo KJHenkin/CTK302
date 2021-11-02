@@ -12,7 +12,7 @@ var desc ;
 function setup() {
   createCanvas(400, 400);
 
-  sky = loadImage("assets/clearsky.jpg") ; 
+  sky = loadImage("assets/clearsky.jpg") ;
 
   // HERE is the call to get the weather.
 
@@ -48,7 +48,7 @@ function draw() {
 
     case 1:
 
-      background(200);
+      background(sky);
       fill("black");
       text("What is the weather in " + weather.name + "?", 20, 20);
       text("windspeed is " + windspeed, 20, 40);
