@@ -8,7 +8,7 @@ function setup() {
 
 paint = loadImage('assets/paint.jpg') ;
 
-imadeMode(CENTER) ;
+imageMode(CENTER) ;
 
   // for (let i = 0; i < 20; i++) {
   //   cars.push(new Car());
@@ -16,7 +16,7 @@ imadeMode(CENTER) ;
 }
 
 function draw() {
-  background(paint);
+  createImage(paint);
 
 
   cars.push(new Car()); //spawn car
