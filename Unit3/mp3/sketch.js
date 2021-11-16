@@ -5,7 +5,7 @@ let timer = 0;
 let state = 0;
 let camera;
 let film;
-let studio ;
+let studio;
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
@@ -13,7 +13,7 @@ function setup() {
 
   camera = loadImage("assets/camera.png");
   film = loadImage("assets/film.png");
-  studio = loadImage("assets/photostudio.jpg") ;
+  studio = loadImage("assets/photostudio.jpg");
 
   imageMode(CENTER);
   textAlign(CENTER);
