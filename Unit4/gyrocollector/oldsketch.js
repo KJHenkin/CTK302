@@ -5,15 +5,13 @@ let timer = 0;
 let state = 0;
 let camera;
 let film;
-let studio ;
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
 
 
-  camera = loadImage("assets/camera.png");
-  film = loadImage("assets/film.png");
-  studio = loadImage("assets/photostudio.jpg") ;
+  camera = loadImage("assets/camera.svg");
+  film = loadImage("assets/film.svg");
 
   imageMode(CENTER);
   textAlign(CENTER);
@@ -84,7 +82,7 @@ function mouseReleased() {
 }
 
 function game() {
-  background(studio, windowheight, windowwidth);
+  background("grey");
   for (let i = 0; i < cars.length; i++) {
     cars[i].display();
     cars[i].move();
