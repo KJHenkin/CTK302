@@ -48,7 +48,7 @@ function draw() {
 
     case 1:
 
-      image(sky);
+      image(sky, windowWidth, windowHeight);
       fill("black");
       text("What is the weather in " + weather.name + "?", 20, 20);
       text("windspeed is " + windspeed, 20, 40);
