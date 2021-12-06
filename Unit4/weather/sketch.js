@@ -10,7 +10,7 @@ var humid = 0 ;
 var desc ;
 
 function setup() {
-  createCanvas(400, 400);
+  createCanvas(windowWidth, windowHeight);
 
   sky = loadImage("assets/clearsky.jpg") ;
 
@@ -48,7 +48,7 @@ function draw() {
 
     case 1:
 
-      image(sky, width/2, height/2, windowWidth, windowHeight);
+      image(sky, windowWidth, windowHeight);
       fill("black");
       text("What is the weather in " + weather.name + "?", 20, 20);
       text("windspeed is " + windspeed, 20, 40);
