@@ -4,7 +4,7 @@ let splatter ;
 
 function setup() {
 
-  splatter = loadImage("splatter.jpg") ;
+  splatter = loadImage("assets/paintsplatter.jpg") ;
   //let key = "1xG5lzBtJV3gK61ZE_qdku3ms9-pCJqwl0T8RVHI11m0"; // this is KEY of the URL from the sheet
 
     let key = "165L_4n79VUCj6T7UGcX4a7wRtWOHMcCpm0977wh4W-I"; // this is KEY of the URL from the sheet
@@ -38,7 +38,7 @@ function gotData(data) {
 }
 
 function draw() {
-  createImage(splatter, 600, 600);
+  image(splatter, windowWidth, windowHeight);
 
   // // iterate through the bubbles and display the objects!
   for (let i = 0; i < bubbles.length; i++) {
