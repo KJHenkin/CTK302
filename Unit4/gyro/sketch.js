@@ -2,7 +2,7 @@
 Make sure you turn on orientation lock on your iPhone or Android device. */
 
 let alpha = 0, beta = 0 , gamma = 0; // gyroscope variablers
-let bunnyImage;
+let puppyImage;
 let xPosition = 0;
 let yPosition = 0;
 let x = 0, y = 0, z = 0 ; // accelerometer data
@@ -14,7 +14,7 @@ function setup() {
 
 
 
-  bunnyImage = loadImage("assets/bunny.jpg");
+  puppyImage = loadImage("assets/puppy.png");
   imageMode(CENTER);
   rectMode(CENTER);
 

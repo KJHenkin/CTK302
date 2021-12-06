@@ -12,7 +12,7 @@ var desc ;
 function setup() {
   createCanvas(windowWidth, windowHeight);
 
-  sky = loadImage("assets/clearsky.jpg") ;
+  sky = loadImage("assets/clearskies.jpg") ;
 
   // HERE is the call to get the weather.
 
