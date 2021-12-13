@@ -14,7 +14,7 @@ function setup() {
 
 
 
-  puppyImage = loadImage("assets/puppy.png");
+  puppyImage = loadImage("assets/puppy.jpg");
   imageMode(CENTER);
   rectMode(CENTER);
 
@@ -22,7 +22,7 @@ function setup() {
 
 function draw() {
 
-  background('#c6f5ff'); // light blue
+  background('#d291bc'); // light blue
 
   // the map command !!!!
   // takes your variable and maps it from range 1 to range 2
@@ -36,7 +36,7 @@ function draw() {
 
   rotate(radians(alpha)); // rotate the bunny depending on the alpha intake
 
-  image(bunnyImage, 0, 0, 500, 500);
+  image(puppyImage, 0, 0, 500, 500);
   // rect(0, 0, 100, 100) ;
   pop();
 
